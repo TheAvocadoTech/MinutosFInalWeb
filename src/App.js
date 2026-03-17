@@ -119,7 +119,7 @@ export default function App() {
           element={<DeliveryRegistration />}
         />
         {/* Default fallback */}
-        <Route path="*" element={<Home />} />
+        // <Route path="*" element={<Home />} />
       </Routes>
       <Footer />
     </>
