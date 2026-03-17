@@ -90,29 +90,29 @@ export default function App() {
   return (
     <>
       <ScrollToTop /> {/* ✅ Add ScrollToTop component */}
-      <Header />
-      <Routes>
-        {/* Public Route */}
-        <Route path="/login" element={<PhoneAuth />} />
-        Protected Routes
-        <Route
-          path="/profile"
-          element={
-            <PrivateRoute>
-              <Profile />
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path="/subCategory/:categoryName"
-          element={<FruitsVegetablesComponent />}
-        />
-        <Route path="/subcategory" element={<CategoriesSub />} />
-        <Route path="/product/:id" element={<ProductDetailScreen />} />
-        <Route path="/checkout" element={<CheckoutPage />} />
-        {/* <Route path="/payment" element={<PaymentCheckout />} /> */}
-        <Route path="/sell" element={<VendorRegistrationForm />} />
-        <Route path="/nearByStore" element={<StoreSelector />} />
+      // <Header />
+      // <Routes>
+      //   {/* Public Route */}
+      //   <Route path="/login" element={<PhoneAuth />} />
+      //   Protected Routes
+      //   <Route
+      //     path="/profile"
+      //     element={
+      //       <PrivateRoute>
+      //         <Profile />
+      //       </PrivateRoute>
+      //     }
+      //   />
+      //   <Route
+      //     path="/subCategory/:categoryName"
+      //     element={<FruitsVegetablesComponent />}
+      //   />
+      //   <Route path="/subcategory" element={<CategoriesSub />} />
+      //   <Route path="/product/:id" element={<ProductDetailScreen />} />
+      //   <Route path="/checkout" element={<CheckoutPage />} />
+      //   {/* <Route path="/payment" element={<PaymentCheckout />} /> */}
+      //   <Route path="/sell" element={<VendorRegistrationForm />} />
+      //   <Route path="/nearByStore" element={<StoreSelector />} />
         {/* <Route path="/delievery" element={<ThankYouPage />} /> */}
         <Route
           path="/delieveryRegistration"
